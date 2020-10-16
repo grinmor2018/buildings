@@ -1,9 +1,10 @@
  import { Document} from 'mongoose';
+ import { Ambit } from './ambit.interface';
 
  export interface Building extends Document {
     readonly code: string;
     readonly name: string;
-    readonly ambit: string;
+    readonly ambit: Ambit[];
     readonly floor: number;
     readonly waitingroom: string;
     readonly service: string;

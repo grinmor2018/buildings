@@ -1,7 +1,10 @@
+import { CreateAmbitDto } from './ambit.dto';
+
+
 export class CreateBuildingDto {
     readonly code: string;
     readonly name: string;
-    readonly ambit: string;
+    readonly ambit: CreateAmbitDto[];
     readonly floor: number;
     readonly waitingroom: string;
     readonly service: string;

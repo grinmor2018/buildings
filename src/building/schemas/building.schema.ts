@@ -1,9 +1,12 @@
 import { Schema } from 'mongoose';
+import { type } from 'os';
+import { AmbitSchema } from './ambit.schema';
+
 
 export const BuildingSchema = new Schema ({
     code: String,
     name: String,
-    ambit: String,
+    ambit: [AmbitSchema],
     floor: Number,
     waitingroom: String,
     service: String,
