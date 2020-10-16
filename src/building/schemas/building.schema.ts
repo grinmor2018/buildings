@@ -1,6 +1,6 @@
 import { Schema } from 'mongoose';
-import { type } from 'os';
-import { AmbitSchema } from './ambit.schema';
+
+import { AmbitSchema } from '../../ambit/schemas/ambit.schema';
 
 
 export const BuildingSchema = new Schema ({

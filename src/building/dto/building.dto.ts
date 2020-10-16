@@ -1,4 +1,4 @@
-import { CreateAmbitDto } from './ambit.dto';
+import { CreateAmbitDto } from '../../ambit/dto/ambit.dto';
 
 
 export class CreateBuildingDto {

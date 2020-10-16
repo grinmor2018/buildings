@@ -1,5 +1,5 @@
  import { Document} from 'mongoose';
- import { Ambit } from './ambit.interface';
+ import { Ambit } from '../../ambit/interfaces/ambit.interface';
 
  export interface Building extends Document {
     readonly code: string;
