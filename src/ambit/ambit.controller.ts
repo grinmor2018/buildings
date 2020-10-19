@@ -1,5 +1,4 @@
 import { Controller, Get, Post, Put, Delete, Res, HttpStatus, Body, Param, NotFoundException, Query } from '@nestjs/common';
-import { from } from 'rxjs';
 
 import { CreateAmbitDto } from './dto/ambit.dto';
 import { AmbitService } from './ambit.service';
