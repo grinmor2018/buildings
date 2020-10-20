@@ -3,6 +3,7 @@ import { CreateFloorDto } from '../../floor/dto/floor.dto';
 import { CreateWaitingroomDto } from '../../waitingroom/dto/waitingroom.dto';
 import { CreateServicespecialityDto } from '../../servicespeciality/dto/servicespeciality.dto';
 import { CreateConsultingroomDto } from '../../consultingroom/dto/consultingroom.dto';
+import { CreateRoomDto } from '../../room/dto/room.dto';
 
 
 export class CreateBuildingDto {
@@ -13,5 +14,5 @@ export class CreateBuildingDto {
     readonly waitingroom: CreateWaitingroomDto[];
     readonly servicespeciality: CreateServicespecialityDto[];
     readonly consultingroom: CreateConsultingroomDto[];
-    readonly room: number
+    readonly room: CreateRoomDto[];
 }

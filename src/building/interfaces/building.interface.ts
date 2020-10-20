@@ -4,6 +4,7 @@
  import { Waitingroom } from '../../waitingroom/interfaces/waitingroom.interface';
  import { Servicespeciality } from '../../servicespeciality/interfaces/servicespeciality.interface';
  import { Consultingroom } from '../../consultingroom/interfaces/consultingroom.interface';
+ import { Room } from '../../room/interfaces/room.interface';
 
  export interface Building extends Document {
     readonly code: string;
@@ -13,5 +14,5 @@
     readonly waitingroom: Waitingroom[];
     readonly servicespecialty: Servicespeciality[];
     readonly consultingroom: Consultingroom[];
-    readonly room: number
+    readonly room: Room[];
 }

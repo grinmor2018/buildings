@@ -5,6 +5,7 @@ import { FloorSchema } from '../../floor/schemas/floor.schema';
 import { WaitingroomSchema } from '../../waitingroom/schemas/waitingroom.schema';
 import { ServicespecialitySchema } from '../../servicespeciality/schemas/servicespeciality.schema';
 import { ConsultingroomSchema } from '../../consultingroom/schemas/consultingroom.schema';
+import { RoomSchema } from '../../room/schemas/room.schema';
 
 
 export const BuildingSchema = new Schema ({
@@ -15,6 +16,6 @@ export const BuildingSchema = new Schema ({
     waitingroom: [WaitingroomSchema],
     servicespeciality: [ServicespecialitySchema],
     consultingroom: [ConsultingroomSchema],
-    room: Number,
+    room: [RoomSchema],
     createdAt: { type: Date, default: Date.now }
 })

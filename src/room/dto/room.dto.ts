@@ -1,6 +1,6 @@
 import { Document } from 'mongoose';
 
- export interface Ambit extends Document {
+export class CreateRoomDto extends Document {
     readonly code: string;
     readonly name: string;
 }
