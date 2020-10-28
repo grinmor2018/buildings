@@ -10,11 +10,12 @@ import { SalaModule } from './sala/sala.module';
 import { ServEspeModule } from './servespe/servespe.module';
 import { ContacteController } from './contacte/contacte.controller';
 import { ServeiController } from './servei/servei.controller';
+import { RespostaModule } from './resposta/resposta.module';
 
 @Module({
   imports: [EdificiModule, MongooseModule.forRoot('mongodb://localhost/backoffice-edificis', {
     useFindAndModify: false
-  }), ContacteModule, ServeiModule, PlantaModule, SalaModule, ServEspeModule],
+  }), ContacteModule, ServeiModule, PlantaModule, SalaModule, ServEspeModule, RespostaModule],
   controllers: [AppController, ContacteController, ServeiController],
   providers: [AppService]
 })

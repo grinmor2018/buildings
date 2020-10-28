@@ -1,5 +1,5 @@
 import { Controller, Get, Post, Put, Delete, Res, HttpStatus, Body, Param, NotFoundException, Query } from '@nestjs/common';
-import { from } from 'rxjs';
+
 import { CreateEdificiDto } from './dto/edifici.dto';
 import { EdificiService } from './edificis.service';
 
