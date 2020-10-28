@@ -2,20 +2,20 @@ import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { BuildingModule } from './building/building.module';
-import { AmbitController } from './ambit/ambit.controller';
-import { AmbitModule } from './ambit/ambit.module';
-import { FloorModule } from './floor/floor.module';
-import { WaitingroomModule } from './waitingroom/waitingroom.module';
-import { ConsultingroomModule } from './consultingroom/consultingroom.module';
-import { RoomModule } from './room/room.module';
-import { ServicespecialityModule } from './servicespeciality/servicespeciality.module';
+import { EdificiModule } from './edifici/edificis.module';
+import { ContacteModule } from './contacte/contacte.module';
+import { ServeiModule } from './servei/servei.module';
+import { PlantaModule } from './planta/planta.module';
+import { SalaModule } from './sala/sala.module';
+import { ServEspeModule } from './servespe/servespe.module';
+import { ContacteController } from './contacte/contacte.controller';
+import { ServeiController } from './servei/servei.controller';
 
 @Module({
-  imports: [BuildingModule, MongooseModule.forRoot('mongodb://localhost/backoffice-buildings', {
+  imports: [EdificiModule, MongooseModule.forRoot('mongodb://localhost/backoffice-edificis', {
     useFindAndModify: false
-  }), AmbitModule, FloorModule, WaitingroomModule, ConsultingroomModule, RoomModule, ServicespecialityModule],
-  controllers: [AppController, AmbitController],
-  providers: [AppService],
+  }), ContacteModule, ServeiModule, PlantaModule, SalaModule, ServEspeModule],
+  controllers: [AppController, ContacteController, ServeiController],
+  providers: [AppService]
 })
 export class AppModule {}
