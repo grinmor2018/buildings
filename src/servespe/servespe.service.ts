@@ -17,8 +17,8 @@ export class ServEspeService {
         const servespe = await this.servespeModel.findById(servespeId);
         return servespe;
     }
-    async createServespe(creCreateServespeDto:CreateServespeDto): Promise<Servespe>{
-        const servespe = new this.servespeModel(creCreateServespeDto);
+    async createServespe(createServespeDto:CreateServespeDto): Promise<Servespe>{
+        const servespe = new this.servespeModel(createServespeDto);
         return await servespe.save();
     }
     async deleteServespe(servespeId: string): Promise<Servespe> {
